@@ -6,5 +6,5 @@
     NODE_ENV = "production"
 [[headers]]
     for = /Hitchcock.woff2
-    [[headers.values]]
+    [headers.values]
         Access-Control-Allow-Origin: *
