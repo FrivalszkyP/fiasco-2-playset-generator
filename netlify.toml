@@ -4,3 +4,7 @@
     publish = "public/"
 [build.environment]
     NODE_ENV = "production"
+[[headers]]
+    for = /Hitchcock.woff2
+    [[headers.values]]
+        Access-Control-Allow-Origin: *
