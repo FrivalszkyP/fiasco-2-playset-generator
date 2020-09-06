@@ -1,0 +1,37 @@
+{
+  "name": "fiasco-2-playset-generator",
+  "version": "1.0.0",
+  "description": "A playset generator for Fiasco 2 RPG released by Bully Pulpit Games (https://bullypulpitgames.com/games/fiasco). Uses Netlify and a serverless function.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:lambda",
+    "build:lambda": "netlify-lambda build functions-src",
+    "start:lambda": "AWS_LAMBDA_FUNCTION_NAME=generate-svg netlify-lambda serve functions-src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrivalszkyP/fiasco-2-playset-generator.git"
+  },
+  "keywords": [
+    "fiasco",
+    "rpg"
+  ],
+  "author": "Peter Frivalszky-Mayer <freevo@gmail.com>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/FrivalszkyP/fiasco-2-playset-generator/issues"
+  },
+  "homepage": "https://github.com/FrivalszkyP/fiasco-2-playset-generator#readme",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "chrome-aws-lambda": "^5.2.1",
+    "netlify-lambda": "^2.0.1",
+    "puppeteer-core": "^5.2.1",
+    "utf-8-validate": "^5.0.2",
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "puppeteer": "^5.2.1"
+  }
+}
