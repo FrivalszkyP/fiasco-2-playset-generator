@@ -13,26 +13,50 @@
                 margin: 0;
                 padding: 0;
             }
-            .location {
+            .locations {
                 background-image: url(https://fiasco-playset-generator.netlify.app/location.png);
             }
-            .object {
+            .objects {
                 background-image: url(https://fiasco-playset-generator.netlify.app/object.png);
             }
-            .need {
+            .needs {
                 background-image: url(https://fiasco-playset-generator.netlify.app/need.png);
             }
             .relationship {
                 background-image: url(https://fiasco-playset-generator.netlify.app/relationship.png);
             }
+            .category {
+                font-family: Hitchcock;
+                font-size: 68px;
+                position: absolute;
+                top: 430px;
+                left: 287px;
+            }
+            .title {
+                font-family: Helvetica, "Helvetica Neue", "Neue Helvetica", Arial;
+                font-size: 48px;
+                font-weight: bold;
+                position: absolute;
+                top: 501px;
+                left: 297px;
+                width: 700px;
+            }
+            .playset {
+                color: #ffffff;
+                font-family: Helvetica, "Helvetica Neue", "Neue Helvetica", Arial;
+                font-size: 26px;
+                font-weight: bold;
+                left: 430px;
+                position: absolute;
+                text-align: right;
+                top: 725px;
+                width: 400px;
+            }
         </style>
     </head>
     <body class="#TYPE#">
-        <svg width="1125" height="825" viewBox="0 0 1125 825" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Arial" font-size="48" font-weight="bold" letter-spacing="0em" x="293" y="501.141">#TITLE#</text>
-            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Hitchcock" font-size="55" letter-spacing="0em" x="287" y="430.638">#CATEGORY#</text>
-            <text fill="white" xml:space="preserve" style="white-space: pre" text-anchor="end" font-family="Arial" font-size="26" font-weight="bold" letter-spacing="0em" x="830" y="725.014">#PLAYSET#</text>
-        </svg>
-
+        <div class="category">#CATEGORY#</div>
+        <div class="title">#TITLE#</div>
+        <div class="playset">#PLAYSET#</div>
     </body>
 </html>
